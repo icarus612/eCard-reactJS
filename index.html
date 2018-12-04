@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <head>
   <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -9,16 +8,16 @@
   <style>
     .card {
     -webkit-perspective: 1200px; /* so you get the 3d effect */
-    height: 600px;
-    width: 300px;
+    height: 700px;
+    width: 400px;
     margin: 20px;
     padding-top: 100px;
     position: relative;
 }
 
 .tile {
-    height:600px;
-    width:300px;
+    height:700px;
+    width:400px;
     position: absolute;
 }
 
@@ -36,11 +35,18 @@
 }
 
 .card .front .outside {
-    background:red;
+  background-image: url("front.jpg");
+  background-size: auto 710px;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .card .front .inside {
-     background: yellow;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto 700px;
+
+    background-image: url("noSig.png");
     -webkit-transform: rotateY(-180deg); /* flips the top-inside so its back touches the fronts back */
 }
 
@@ -52,15 +58,14 @@
 .card.open .front {
     -webkit-transform: rotateY(-180deg); /*rotates the entire front (with the in- and outsides in it) if the class 'open' is added to the card */
 }
-
-  </style>
+</style>
 </head>
 <body>
   <center><div class="center">
     <div class="card">
       <div class="tile front">
         <div class="tile outside"></div>
-        <div class="tile inside"><p>Word inside</p></div>
+        <div class="tile inside"></div>
       </div>
       <div class="tile in-bottom"></div>
     </div>
