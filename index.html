@@ -49,13 +49,16 @@
 
 .in-bottom {
   background-repeat: no-repeat;
-  background-position: center center;
-  background-size: auto 700px;
+  background-position: top center;
+  background-size: 300px;
 
-    background-image: url("noSig.png");
+    background-image: url("logo.jpg");
     z-index: 1;
 }
-
+.second{
+z-index: 1;
+border:
+}
 .card.open .front {
     -webkit-transform: rotateY(-180deg); /*rotates the entire front (with the in- and outsides in it) if the class 'open' is added to the card */
 }
@@ -72,7 +75,9 @@ crossorigin="anonymous"></script>
         <div class="tile outside"></div>
         <div class="tile inside"></div>
       </div>
-      <div class="tile in-bottom"></div>
+      <div class="title second">
+        <div class="tile in-bottom"></div>
+      </div>
     </div>
     <script>
       function openCard() {
