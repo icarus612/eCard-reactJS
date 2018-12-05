@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <head>
-  <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+
 
   <style>
     .card {
@@ -51,7 +48,11 @@
 }
 
 .in-bottom {
-    background: blue;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto 700px;
+
+    background-image: url("noSig.png");
     z-index: 1;
 }
 
@@ -59,6 +60,10 @@
     -webkit-transform: rotateY(-180deg); /*rotates the entire front (with the in- and outsides in it) if the class 'open' is added to the card */
 }
 </style>
+<script
+src="https://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"></script>
 </head>
 <body>
   <center><div class="center">
