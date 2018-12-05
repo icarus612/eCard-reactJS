@@ -13,11 +13,15 @@
 }
 
 .tile {
+    height:702px;
+    width:402px;
+    position: absolute;
+}
+.tile2 {
     height:700px;
     width:400px;
     position: absolute;
 }
-
 .card .front {
     -webkit-transition-duration: 0.75s;
     -webkit-transform-origin: 0 0;
@@ -57,26 +61,28 @@
 }
 .second{
 z-index: 1;
-border:
+border-width: 1px;
+border-color: rgb(50, 165, 215);
+border-style: solid;
 }
 .card.open .front {
     -webkit-transform: rotateY(-180deg); /*rotates the entire front (with the in- and outsides in it) if the class 'open' is added to the card */
 }
 </style>
 <script
-src="https://code.jquery.com/jquery-3.3.1.min.js"
-integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-crossorigin="anonymous"></script>
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
 </head>
 <body>
   <center><div class="center">
     <div class="card">
       <div class="tile front">
         <div class="tile outside"></div>
-        <div class="tile inside"></div>
+        <div class="tile2 inside"></div>
       </div>
-      <div class="title second">
-        <div class="tile in-bottom"></div>
+      <div class="tile2 second">
+        <div class="tile2 in-bottom"></div>
       </div>
     </div>
     <script>
