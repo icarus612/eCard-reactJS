@@ -26,7 +26,7 @@
     -webkit-transition-duration: 0.75s;
     -webkit-transform-origin: 0 0;
     -webkit-transform-style: preserve-3d; /* otherwise the perspective gets erased, and you lose the 3d */
-    z-index: 2; /* the front needs to be rendered on top of the back */
+    z-index: 3; /* the front needs to be rendered on top of the back */
 }
 
 .card .front .outside,
@@ -62,7 +62,9 @@
   background-size: 100px;
 
     background-image: url("logo.jpg");
-    z-index: 1;
+    z-index: 2;
+    position: relative;
+
 }
 .second{
 z-index: 1;
@@ -74,10 +76,15 @@ border-style: solid;
     -webkit-transform: rotateY(-180deg); /*rotates the entire front (with the in- and outsides in it) if the class 'open' is added to the card */
 }
 .middleWords{
-  padding: 15px;
+  padding: 20px;
+  font-family: 'Noto Serif TC', serif;
+  font-size: 25px;
+  color: rgb(160,160,200);
 
 }
+
 </style>
+<link href="https://fonts.googleapis.com/css?family=Lora|Merriweather|Noto+Serif+SC|Noto+Serif+TC|Titillium+Web" rel="stylesheet">
 <script
     src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -90,8 +97,8 @@ border-style: solid;
         <div class="tile outside"></div>
         <div class="tile2 inside"></div>
       </div>
-      <div class="tile2 second"><h4 class="middleWords">Whereever the road leads you this holiday season, may you enjoy a time of peace and joy. Sending our best wishes for continued success and happiness in the year ahead.</h4>
-        <div class="tile2 in-bottom"></div>
+      <div class="tile2 second"><h4 class="middleWords">Wherever the road leads you this holiday season, may you enjoy a time of peace and joy. Sending our best wishes for continued success and happiness in the year ahead.</h4>
+        <div class="in-bottom"></div>
       </div>
     </div>
     <script>
