@@ -40,7 +40,7 @@
   background-size: auto 710px;
   background-repeat: no-repeat;
   background-position: center center;
-  border-width: 2px;
+  border-width: 4px;
   border-color: rgb(211,211,211);
   border-style: solid;
 }
@@ -50,26 +50,25 @@
   background-position: center center;
   background-size: auto 700px;
   border-width: 1px 0px 1px 1px;
-  border-color: rgb(50, 165, 215);
+  border-color: rgb(200,200,200);
   border-style: solid;
     background-color: rgb(211,211,211);
     -webkit-transform: rotateY(-180deg); /* flips the top-inside so its back touches the fronts back */
 }
 
 .in-bottom {
-  background-repeat: no-repeat;
-  background-position: bottom right;
-  background-size: 100px;
+  repeat: no-repeat;
+  position: bottom right;
+  width: 150px;
 
-    background-image: url("logo.jpg");
     z-index: 2;
-    position: relative;
+    position: fixed;
 
 }
 .second{
 z-index: 1;
 border-width: 1px;
-border-color: rgb(50, 165, 215);
+border-color: rgb(211,211,211);
 border-style: solid;
 }
 .card.open .front {
@@ -78,15 +77,22 @@ border-style: solid;
 .middleWords{
   padding: 15px;
   font-family: 'Noto Serif TC', serif;
-  font-size: 25px;
-  color: rgb(160,160,200);
+  font-size: 20px;
+  color: rgb(140,140,175);
+
+}
+.bottomWords{
+  padding: 15px;
+  font-family: 'Noto Serif TC', serif;
+  font-size: 20px;
+  color: rgb(100,100,135);
 
 }
 .para{
   padding: 20px;
   font-family: 'Noto Serif TC', serif;
-  font-size: 17px;
-  color: rgb(160,160,200);
+  font-size: 15px;
+  color: rgb(110,110,150);
 
 }
 </style>
@@ -103,11 +109,13 @@ border-style: solid;
         <div class="tile outside"></div>
         <div class="tile2 inside"></div>
       </div>
-      <div class="tile2 second"><h4 class="middleWords">Wherever the road leads you this holiday season, may you enjoy a time of peace and joy. Sending our best wishes for continued success and happiness in the year ahead.</h4>
-        <p class="para">-The Business Advisory Solutions Group</p>
-        <div class="in-bottom"></div>
+      <div class="tile2 second"><h4 class="middleWords"><br />Wherever the road leads you this holiday season, may you enjoy a time of peace and joy.
+        <br /><br />Sending our best wishes for continued success and happiness in the year ahead.</h4>
+        <p class="para">The Business Advisory Solutions Group Team</p>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><img src="logo.jpg" class="in-bottom" />
       </div>
     </div>
+    <h4 class="bottomWords"><br />Click Me</div>
     <script>
       function openCard() {
         $(this).toggleClass('open');
